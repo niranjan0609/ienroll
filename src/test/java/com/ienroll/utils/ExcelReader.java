@@ -1,4 +1,4 @@
-package com.ieasy.utils;
+package com.ienroll.utils;
 
 import java.io.File;
 import java.io.FileInputStream;

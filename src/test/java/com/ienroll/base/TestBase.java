@@ -1,4 +1,4 @@
-package com.ieasy.base;
+package com.ienroll.base;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.grid.selenium.node.FirefoxMutator;
@@ -16,7 +16,6 @@ import org.testng.annotations.Parameters;
 public class TestBase{
 
 	private WebDriver driver;
-	//static String driverPath = "E:/Selenium/InsureEasyAutomation/src/test/java/resources/";
 	
 	public WebDriver getDriver() {
 		return driver;
@@ -75,7 +74,7 @@ public class TestBase{
 
 	@Parameters({ "browserType", "appURL" })
 	@BeforeTest(alwaysRun = true)
-	public void initializeTestBaseSetup(@Optional("chrome") String browserType, @Optional("https://test.insureeasy.in/") String appURL, ITestContext context) {		try {
+	public void initializeTestBaseSetup(@Optional("chrome") String browserType, @Optional("http://dev.isbsindia.in/ienroll_iirm/Stage/") String appURL, ITestContext context) {		try {
 		//test.log(Status.INFO, "Opening browser "+browserType);
 		    System.out.println("Intializing browser...." + browserType);
 			driver = setDriver(browserType, appURL);

@@ -1,4 +1,4 @@
-package com.ieasy.base;
+package com.ienroll.base;
 
 import java.io.File;
 
@@ -14,7 +14,7 @@ import org.testng.ITestResult;
 
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
-import com.ieasy.utils.Util;
+import com.ienroll.utils.Util;
 
 public class TestListener implements ITestListener {
 

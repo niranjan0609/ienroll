@@ -1,4 +1,4 @@
-package com.insureEasy;
+package com.iEnroll;
 
 /**
  * Hello world!

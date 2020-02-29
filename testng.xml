@@ -1,32 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Admin test suite" verbose="1" >
+<suite name="Enrollment test suite" verbose="1" >
 
  <listeners>
-       <listener class-name="com.ieasy.base.TestListener"/>
+       <listener class-name="com.ienroll.base.TestListener"/>
   </listeners>
-	<!-- <test name="firefox Tests">
-	<parameter name="browserType" value="firefox" />
-		<parameter name="appURL" value="http://dev.isbsindia.in/mmenroll/" />
-		<classes>
-			<class name="" />
-		</classes>
-	</test>
- -->
+	
 <test name="Chrome Tests">
 <parameter name="browserType" value="chrome" />
-	<parameter name="appURL" value="https://test.insureeasy.in" />
+	<parameter name="appURL" value="http://dev.isbsindia.in/ienroll_iirm/Stage" />
 		<classes>
-		    <class name="com.ieasy.tests.Dp1APlan" />
-			<class name="com.ieasy.tests.Dp2APlan" />
-			<class name="com.ieasy.tests.Dp1A1C" />
-			<class name="com.ieasy.tests.Dp1A2C" />
-			<class name="com.ieasy.tests.Dp1A3C" />
-			<class name="com.ieasy.tests.Dp1A4C" />
-			<class name="com.ieasy.tests.Dp2A1C" />
-			<class name="com.ieasy.tests.Dp2A2C" />
-			<class name="com.ieasy.tests.Dp2A3C" />
-			<class name="com.ieasy.tests.Dp1A4C" />
+		 		    <class name="com.ienroll.tests.DCB" />
 			
 		</classes>
 	</test>

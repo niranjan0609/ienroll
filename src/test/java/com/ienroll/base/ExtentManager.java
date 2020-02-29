@@ -1,4 +1,4 @@
-package com.ieasy.base;
+package com.ienroll.base;
 
 import java.io.File;
 
@@ -8,7 +8,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-import com.ieasy.utils.Util;
+import com.ienroll.utils.Util;
 
 
 public class ExtentManager {
@@ -37,6 +37,7 @@ public class ExtentManager {
         htmlReporter.config().setChartVisibilityOnOpen(true);
         htmlReporter.config().setTheme(Theme.DARK);
         htmlReporter.config().setDocumentTitle(fileName);
+       
         htmlReporter.config().setEncoding("utf-8");
         htmlReporter.config().setReportName(reportFileName);
         htmlReporter.config().setTimeStampFormat("EEEE, MMMM dd, yyyy, hh:mm a '('zzz')'");
