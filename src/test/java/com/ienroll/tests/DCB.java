@@ -144,9 +144,9 @@ private static final Logger log = LogManager.getLogger(DCB.class);
 		Thread.sleep(2000);
 		SoftAssert softAssert = new SoftAssert();
 		softAssert.assertEquals(SumInsuredValue, pojoData.getSumInsured(), "Sum insured displayed on Portal is not correct");
-		ExtentTestManager.getTest().log(Status.INFO, "SI Sum Insured displayed on correctly on Portal");
+		ExtentTestManager.getTest().log(Status.INFO, "Base Sum Insured displayed on Portal is matching with the SI mentioned on DCB policy note");
 		softAssert.assertEquals(premiumValue, pojoData.getPremium(), "Actual premium value not matching with expected value");
-		ExtentTestManager.getTest().log(Status.INFO, "SUM Insured displayed on Portal is matching with the SI on DCB policy note");
+		ExtentTestManager.getTest().log(Status.INFO, "Base Premium for Base SI displayed on Portal is matching with the DCB policy Unit rate");
 		
 		//
 		log.debug("Verifying Premium when Top Up sum insured is 1 lac");
