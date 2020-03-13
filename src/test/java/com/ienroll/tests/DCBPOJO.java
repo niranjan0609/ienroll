@@ -62,6 +62,10 @@ public class DCBPOJO {
 	
 	
 
+	
+
+
+
 	public void setEmpID(String empID) {
 		// TODO Auto-generated method stub
 		EmpID = empID;

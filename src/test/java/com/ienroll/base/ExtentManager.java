@@ -29,6 +29,7 @@ public class ExtentManager {
  
     //Create an extent report instance
     public static ExtentReports createInstance() {
+    	try {
         platform = getCurrentPlatform();
         String fileName = getReportFileLocation(platform);
        
@@ -44,6 +45,9 @@ public class ExtentManager {
  
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
+    	} catch(Exception exp) {
+    		System.out.println("Exception occured "+exp.getStackTrace());
+    	}
  
         return extent;
     }
